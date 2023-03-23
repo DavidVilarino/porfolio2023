@@ -1,24 +1,19 @@
 import "./Home.scss";
-import meImg from "./../../assets/images/IMG_3505.jpeg";
+import face from "../../assets/icons/facebook.png"
+import git from "../../assets/icons/github.png"
+import linkdin from "../../assets/icons/linkedin-box.png"
+
 
 export default function Home() {
-  return (
-    <div className="cnt-1">
-
-    
-    <div className="cnt-page">
-      <div className="cnt-page__txt">
-        <h4 className="cnt-page__txth4">
-          Hola, soy David!
-          Frontend Dev Junior, y
-          aquí te muestro algunos de mis proyectos utilizando
-          HTML, JS, REACT,SASS etc.
-        </h4>
-      </div>
-      <div className="cnt-page__img">
-        <img src={meImg} className="img" alt="img"></img>
-      </div>
+  return <div className="cnt-home">
+    <div className="cnt-home__tittleDiv">
+      <h1 className="tittle-name">David Brohts</h1>
+      <h3 className="tittle-dev">Junior Developer</h3>
     </div>
+    <div className="cnt-home-icns">
+      <img alt="logo"src={face} className="cnt-home-icns__face"></img>
+      <img alt="logo" src={git} className="cnt-home-icns__git"></img>
+      <img alt="logo" src={linkdin} className="cnt-home-icns__linkedin"></img>
     </div>
-  );
+  </div>;
 }

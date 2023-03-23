@@ -14,16 +14,17 @@ export default function Navbar() {
       <div className="nav-anch">
         <ul className="nav-anch__ul">
           <li>
-            <NavLink to="/" className="nav-anch__a">Home</NavLink>
+            <NavLink to="/" className="nav-anch__a" style={({ isActive }) => ({ "textDecoration": isActive ? 'line-through  var(--color-text-1) 2px'  : 'none'})}>Home</NavLink>
           </li>
           <li>
-            <NavLink to="/projects" className="nav-anch__a">Projects</NavLink>
+            <NavLink to="/projects" className="nav-anch__a" style={({ isActive }) => ({ "textDecoration": isActive ? 'line-through var(--color-text-1) 2px' : 'none' })}>Projects</NavLink>
           </li>
           <li>
-            <NavLink to="/contact" className="nav-anch__a">Contact</NavLink>
+          <NavLink to="/about" className="nav-anch__a" style={({ isActive }) => ({ "textDecoration": isActive ? 'line-through var(--color-text-1) 2px' : 'none' })}>About</NavLink>
           </li>
           <li>
-            <NavLink to="/about" className="nav-anch__a">About</NavLink>
+            
+            <NavLink to="/contact" className="nav-anch__a" style={({ isActive }) => ({ "textDecoration": isActive ? 'line-through var(--color-text-1) 2px' : 'none' })}>Contact</NavLink>
           </li>
         </ul>
       </div>

@@ -58,3 +58,11 @@ text-align: center;
     src: local("JosefinItalic"),
       url("../../porfolio2023/src/assets/fonts/Josefin-Italic.ttf") format("truetype");
   }
+.App{
+background-image: url("./assets/images/bg.png");
+background-size: cover;
+height: 100vh;
+width: 100vw;
+background-repeat: no-repeat;
+margin: 0px;
+}
